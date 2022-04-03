@@ -12,7 +12,8 @@ export default defineConfig({
       reactivityTransform: true
     }),
     legacy({
-      targets: ["defaults", "not IE 11"]
+      targets: ["defaults", "IE 11"],
+      additionalLegacyPolyfills: ["regenerator-runtime/runtime"] // 面向IE11时需要此插件
     })
   ]
 });
