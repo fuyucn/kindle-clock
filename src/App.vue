@@ -1,16 +1,9 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 in CodeSandbox!" />
+  <Clock />
 </template>
 
-<script>
-import HelloWorldVue from "./components/HelloWorld.vue";
-export default {
-  name: "App",
-  components: {
-    HelloWorld: HelloWorldVue,
-  },
-};
+<script setup lang='ts'>
+import Clock from "~/components/Clock.vue";
 </script>
 
 <style>
@@ -19,7 +12,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #000;
   margin-top: 60px;
 }
 </style>
