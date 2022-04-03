@@ -2,7 +2,11 @@
   <div v-if="!loading">
     <div class="clock-container">
       <span class="time">
-        {{ hour }}<span>:</span>{{ minute }}<span>:</span>{{ second }}
+        {{ hour }}
+        <span>:</span>
+        {{ minute }}
+        <span>:</span>
+        {{ second }}
       </span>
     </div>
   </div>

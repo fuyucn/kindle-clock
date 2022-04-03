@@ -1,17 +1,21 @@
 <template>
   <div class="container">
+    {{ date1 }}
     <div style="margin-top: 30%">
       <Clock />
     </div>
     <div style="margin-top: 40px">
-      <Date />
+      <DateCom />
     </div>
   </div>
 </template>
 
 <script setup lang='ts'>
+import { ref } from "vue";
 import Clock from "./components/Clock.vue";
-import Date from "./components/Date.vue";
+import DateCom from "./components/Date.vue";
+
+const date1 = ref(Date.now());
 </script>
 
 <style>
