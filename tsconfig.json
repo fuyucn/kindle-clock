@@ -25,5 +25,8 @@
     {
       "path": "./tsconfig.node.json"
     }
-  ]
+  ],
+  "vueCompilerOptions": {
+    "experimentalCompatMode": 2
+  }
 }

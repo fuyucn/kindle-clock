@@ -1,4 +1,4 @@
-import { ref, onMounted, onUnmounted, computed } from "vue";
+import { ref, onMounted, onUnmounted } from "@vue/composition-api";
 import dayjs from "dayjs";
 
 export default function useTimer() {
