@@ -1,25 +1,16 @@
-# kindle ckicj
+# kindle clock
+Simple web page to display a clock on kindle browser.
 
-## Project setup
+Test out vue + vite. Build to static serve.
 
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
+## dev
 
 ```
-yarn serve
+npm run dev
 ```
 
-### Compiles and minifies for production
+## build
 
 ```
-yarn build
-```
-
-### Lints and fixes files
-
-```
-yarn lint
+npm run build
 ```
