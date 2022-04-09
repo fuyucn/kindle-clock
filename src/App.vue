@@ -1,46 +1,60 @@
 <template>
-  <div class="container">
-    {{ date1 }}
-    <div style="margin-top: 30%">
+  <div class="page">
+    <div class="clock">
       <Clock />
     </div>
-    <div style="margin-top: 40px">
+    <div class="date">
       <DateCom />
     </div>
   </div>
 </template>
 
-<script setup lang='ts'>
-import { ref } from "@vue/composition-api";
+<script >
 import Clock from "./components/Clock.vue";
-import DateCom from "./components/Date.vue";
-
-const date1 = ref(Date.now());
+import DateCom from './components/Date.vue'
+import timeMixin from './composable/time.js'
+export default {
+  mixins: [timeMixin],
+  components: {
+    Clock,
+    DateCom
+  }
+}
 </script>
 
 <style>
 html,
 body {
+  height: 0;
   width: 100%;
-  height: 100%;
   margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
   overflow: hidden;
 }
 
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+body {
   color: #000;
-  width: 100%;
-  height: 100%;
+  background-color: #fff;
+  position: relative;
 }
 
-.container {
+.page {
+  position: fixed;
   width: 100%;
+  height: 100%;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+.clock {
+  padding-top: 10%;
+}
+.date {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 </style>

@@ -1096,11 +1096,6 @@
   "resolved" "https://registry.npmjs.org/entities/-/entities-3.0.1.tgz"
   "version" "3.0.1"
 
-"esbuild-linux-64@0.14.30":
-  "integrity" "sha512-LUnpzoMpRqFON5En4qEj6NWiyH6a1K+Y2qYNKrCy5qPTjDoG/EWeqMz69n8Uv7pRuvDKl3FNGJ1dufTrA5i0sw=="
-  "resolved" "https://registry.npmjs.org/esbuild-linux-64/-/esbuild-linux-64-0.14.30.tgz"
-  "version" "0.14.30"
-
 "esbuild@^0.14.27", "esbuild@>=0.13":
   "integrity" "sha512-wCecQSBkIjp2xjuXY+wcXS/PpOQo9rFh4NAKPh4Pm9f3fuLcnxkR0rDzA+mYP88FtXIUcXUyYmaIgfrzRl55jA=="
   "resolved" "https://registry.npmjs.org/esbuild/-/esbuild-0.14.30.tgz"

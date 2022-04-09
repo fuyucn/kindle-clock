@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "allowJs": true,
     "target": "esnext",
     "useDefineForClassFields": true,
     "module": "esnext",
@@ -29,4 +30,5 @@
   "vueCompilerOptions": {
     "experimentalCompatMode": 2
   }
+
 }

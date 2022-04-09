@@ -1,21 +1,52 @@
 <template>
   <div v-if="!loading">
-    <div class="date-container">
-      <span class="date">{{ date }}</span>
+    <div class="container">
+      <div class="date-container">
+        <div class="left">{{ day }}</div>
+        <div class="right">
+          <div class="month">{{ month }}</div>
+          <div class="year">{{ year }}</div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
-<script setup lang="ts">
-import useTimer from "../composable/timer.ts";
-
-const { loading, date } = useTimer();
+<script>
+import timeMixin from "../composable/time.js";
+export default {
+  mixins: [timeMixin]
+}
 </script>
 <style scoped>
-.date-container {
-  padding: 4px;
+.container {
+  padding: 20px;
 }
-.date {
-  font-size: 36px;
-  font-weight: 300;
+.date-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center
+}
+.left {
+  display: inline-block;
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 1;
+  margin-right: 12px;
+}
+.right {
+ display: inline-block;
+  line-height: 1.35;
+  position: relative;
+}
+.year {
+  display: block;
+  font-size: 24px;
+  font-weight: 500;
+}
+.month {
+  display: block;
+  font-size: 24px;
+  font-weight: 500;
 }
 </style>

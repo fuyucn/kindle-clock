@@ -11,17 +11,19 @@
     </div>
   </div>
 </template>
-<script setup lang="ts">
-import useTimer from "../composable/timer.ts";
-
-const { loading, time, hour, minute, second, day, date, week } = useTimer();
+<script >
+import timeMixin  from "../composable/time.js";
+export default {
+  mixins:[timeMixin]
+}
 </script>
 <style scoped>
 .clock-container {
   padding: 20px;
+  text-align: center;
 }
 .time {
-  font-size: 84px;
+  font-size: 68px;
   font-weight: 500;
 }
 </style>
