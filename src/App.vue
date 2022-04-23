@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <div class="clock">
-      <Clock />
+      <ClockBLock />
     </div>
     <div class="date">
       <DateCom />
@@ -9,16 +9,16 @@
   </div>
 </template>
 
-<script >
-import Clock from "./components/Clock.vue";
-import DateCom from './components/Date.vue'
+<script>
+import ClockBLock from  "./components/ClockBlock.vue";
+import DateCom from './components/DateBlock.vue'
 import timeMixin from './composable/time.js'
 export default {
-  mixins: [timeMixin],
   components: {
-    Clock,
+    ClockBLock,
     DateCom
-  }
+  },
+  mixins: [timeMixin]
 }
 </script>
 

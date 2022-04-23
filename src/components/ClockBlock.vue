@@ -14,6 +14,7 @@
 <script >
 import timeMixin  from "../composable/time.js";
 export default {
+  name:"ClockBlock",
   mixins:[timeMixin]
 }
 </script>
